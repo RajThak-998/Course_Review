@@ -56,10 +56,10 @@ pip install -r requirements.txt
 7. **Usage:**
     ```bash
     #Load initial data
-    python [manage.py](http://_vscodecontentref_/2) load_assignment
+    python manage.py load_assignment
 
     #Run the server
-    python [manage.py](http://_vscodecontentref_/3) runserver
+    python manage.py runserver
     ```
 
 
