@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to the Course Review System</h1>
+    <nav>
+        <ul>
+            <li><a href="{% url 'submit_review' 1 %}">Submit Review</a></li>
+            <li><a href="{% url 'analytics' %}">View Analytics</a></li>
+            <li><a href="{% url 'download_analytics' %}">Download Analytics CSV</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

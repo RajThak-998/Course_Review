@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analytics</title>
+</head>
+<body>
+    <h1>Analytics</h1>
+    <table border="1">
+        <tr>
+            <th>Participant</th>
+            <th>Given Reviews</th>
+            <th>Received Reviews</th>
+        </tr>
+        {% for item in data %}
+        <tr>
+            <td>{{ item.participant }}</td>
+            <td>{{ item.given_reviews }}</td>
+            <td>{{ item.received_reviews }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <a href="{% url 'download_analytics' %}">Download CSV</a>
+</body>
+</html>

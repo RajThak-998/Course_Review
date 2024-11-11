@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Review</title>
+</head>
+<body>
+    <h1>Submit Review for Assignment</h1>
+    <form method="post">
+        {% csrf_token %}
+        <textarea name="content" rows="10" cols="30" placeholder="Write your review here..."></textarea><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
