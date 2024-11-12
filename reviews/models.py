@@ -2,9 +2,9 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Participant(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE, null=True, blank=True)
     uid = models.CharField(max_length=100, unique=True)
     name = models.CharField(max_length=100)
+
 
 class Assignment(models.Model):
     participant = models.ForeignKey(Participant, on_delete=models.CASCADE)
